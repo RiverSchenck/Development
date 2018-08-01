@@ -1,0 +1,10 @@
+Wi-Fi to Monitor Mode
+Manage mode: only captures packets that has its mac address.
+Monitor mode: captures everything around (loses connection)
+
+Switching modes
+	Ifconfig wlan0 down
+	Iwconfig wlan0 mode monitor
+	Ifconfig wlan0 up
+	Iwconfig wlan0
+	Airodump-ng wlan0 ;scans kill by ctrl+c

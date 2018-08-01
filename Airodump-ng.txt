@@ -1,0 +1,18 @@
+Airodump-ng
+https://www.aircrack-ng.org/doku.php?id=airodump-ng
+BSSID- mac address
+PWR- how far the access point from wifi card. The closer the network the easier to sniff packets
+Beacons- signals that the access point sends
+s- number of data packets collected in last 10 seconds
+CH-  channel
+MB- max speed supported by access point
+ENC- encryption type
+CIPHER- used to decipher
+AUTH- type of authorization needed
+
+Target access point
+		      channel         mac address           file to write data        name of card
+	Airodump-ng --channel 1 --bssid 00:71:C2:9D:80:D0 --write test-HOME-2C44-2.4 wlan0
+	
+First section shows all the access points in Wi-Fi range
+Second section shows all clients associated with the access point
